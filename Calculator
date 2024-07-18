@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void  main()
+{
+int a,b,add,sub,mul,div,sum;
+
+ printf("value a: ",a);
+ scanf("%d",&a);
+ 
+ printf("value b:",b);
+ scanf("%d",&b);
+  
+  add=a+b;
+ sub=a-b;
+ mul=a*b;
+ div=a/b;
+ 
+  printf("value of add: %d\n",add);
+  printf("value of sub: %d\n",sub);
+  printf("value of mul: %d\n",mul);
+  printf("value of div: %d\n",div);
+ 
+ 
+ 
+ 
+  getch();
+}
