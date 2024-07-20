@@ -1,27 +1,38 @@
-#include<stdio.h>
-#include<conio.h>
-void  main()
+#include <iostream>
+using namespace std;
+int main()
 {
-int a,b,add,sub,mul,div,sum;
+    char op;
+    double num1,num2;
+    cout << "Enter the Operator ( +, -, *, / ) : ";
+    cin >> op;
+    cout << "Enter two numbers one by one : ";
+    cin >> num1 >> num2;
+    switch ( op )
+    {
+        case '+':
+            cout << num1 << " + " << num2 << " = " << (num1 + num2);
+            break;
 
- printf("value a: ",a);
- scanf("%d",&a);
- 
- printf("value b:",b);
- scanf("%d",&b);
-  
-  add=a+b;
- sub=a-b;
- mul=a*b;
- div=a/b;
- 
-  printf("value of add: %d\n",add);
-  printf("value of sub: %d\n",sub);
-  printf("value of mul: %d\n",mul);
-  printf("value of div: %d\n",div);
- 
- 
- 
- 
-  getch();
+        case '-':
+            cout << num1 << " - " << num2 << " = " << (num1 - num2);
+            break;        
+
+        case '*':
+            cout << num1 << " * " << num2 << " = " << (num1 * num2);
+            break;
+
+        case '/':
+            if( num2 != 0.0 )
+                cout << num1 << " / " << num2 << " = " << (num1 / num2);
+            else 
+                cout << "Divide by zero situation";
+
+            break;
+
+        default:
+            cout << op << " is an invalid operator";
+    }
+
+    return 0;
 }
